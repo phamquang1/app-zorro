@@ -7,6 +7,7 @@ import { PagesComponent } from './pages.component';
 import { IconsProviderModule } from '../icons-provider.module';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
+import { ShareModule } from '../share/share.module';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { NzMenuModule } from 'ng-zorro-antd/menu';
 
     IconsProviderModule,
     NzLayoutModule,
-    NzMenuModule
+    NzMenuModule,
+    ShareModule
   ]
 })
 export class PagesModule { }

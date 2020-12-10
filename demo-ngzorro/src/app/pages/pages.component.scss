@@ -18,10 +18,14 @@
   
   .header-trigger {
     height: 64px;
-    padding: 20px 24px;
+    // 
+    padding-left: 24px;
     font-size: 20px;
     cursor: pointer;
     transition: all .3s,padding 0s;
+  }
+  .tool-task{
+    padding-right: 24px;
   }
   
   .trigger:hover {
@@ -30,10 +34,10 @@
   
   .sidebar-logo {
     position: relative;
-    height: 64px;
+    height: 65px;
     padding-left: 24px;
     overflow: hidden;
-    line-height: 64px;
+    line-height: 65px;
     background: #001529;
     transition: all .3s;
   }
@@ -63,7 +67,7 @@
   
   .app-header {
     position: relative;
-    height: 64px;
+    height: 65px;
     padding: 0;
     background: #fff;
     box-shadow: 0 1px 4px rgba(0,21,41,.08);
@@ -71,6 +75,9 @@
   
   nz-content {
     margin: 24px;
+  }
+  .nz-menu-item{
+    padding-bottom: 5px !important;
   }
   
   .inner-content {

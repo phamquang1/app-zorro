@@ -8,7 +8,7 @@
       <div class="sidebar-logo">
         <a href="https://ng.ant.design/" target="_blank">
           <img src="https://ng.ant.design/assets/img/logo.svg" alt="logo">
-          <h1>Ant Design Of Angular</h1>
+          <h1>Phạm Đình Quang</h1>
         </a>
       </div>
       <ul nz-menu nzTheme="dark" nzMode="inline" [nzInlineCollapsed]="isCollapsed">
@@ -36,13 +36,36 @@
     </nz-sider>
     <nz-layout>
       <nz-header>
-        <div class="app-header">
-          <span class="header-trigger" (click)="isCollapsed = !isCollapsed">
+        <div class="app-header flex justify-between">
+          <span class="header-trigger block " (click)="isCollapsed = !isCollapsed">
               <i class="trigger"
                  nz-icon
                  [nzType]="isCollapsed ? 'menu-unfold' : 'menu-fold'"
               ></i>
           </span>
+          <div class="tool-task">
+            <ul nz-menu nzMode="horizontal">
+              <li nz-menu-item >
+                <i nz-icon nzType="skype" style="margin-bottom: 0;"></i>
+                <a >Skype</a>
+              </li>
+              <li nz-menu-item >
+                <i nz-icon nzType="youtube"></i>
+                <a >Youtube</a>
+              </li>
+              <li nz-submenu nzTitle="Tài khoản" nzIcon="android" >
+                <ul >
+                  <li nz-menu-group  >
+                    <ul >
+                      <li nz-menu-item class="nz-menu-item" >Thông tin</li>
+                      <li nz-menu-item>Đăng xuất</li>
+                      
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
       </nz-header>
       <nz-content>
